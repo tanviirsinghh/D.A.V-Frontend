@@ -9,6 +9,7 @@ import MedicineProductListing from './Pages/product';
 import UserListing from './Pages/userlisting';
 import TrackOrder from './Pages/trackOrder';
 import UserApprovalList from './Pages/approval';
+import OrderHistory from './Pages/History/outer';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/userlisting' element={<UserListing />} />
           <Route path='/trackorder' element={<TrackOrder />} />
           <Route path='/userapprovallist' element={<UserApprovalList />} />
+          <Route path='/history' element={<OrderHistory />} />
         </Routes>
       </BrowserRouter>
 

@@ -53,10 +53,9 @@ export default function RegistrationPage() {
     });
 
     const occupations = [
-        'Admin',
         'Manager',
         'Block Incharge',
-        'Middle Man',
+        'Product Incharge',
         'Manufacturing Department',
 
     ];

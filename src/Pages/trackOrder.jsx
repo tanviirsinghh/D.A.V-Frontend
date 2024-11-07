@@ -4,12 +4,12 @@ import { useState } from "react"
 import { Check, Clock } from "lucide-react"
 
 export default function Component() {
-  const stages = ["Approval", "Block  Incharge", "Manufacturing", "Dispatched"]
+  const stages = ["Approval", "Block  Incharge","Product Incharge", "Manufacturing", "Dispatched"]
 
   const [clients] = useState([
-    { id: "1", name: "Alice Johnson", currentStage: 2 },
-    { id: "2", name: "Bob Smith", currentStage: 1 },
-    { id: "3", name: "Charlie Brown", currentStage: 3 },
+    { id: "1", name: "Alice Johnson", currentStage: 5 },
+    { id: "2", name: "Bob Smith", currentStage: 3 },
+    { id: "3", name: "Charlie Brown", currentStage: 4 },
     { id: "4", name: "Diana Prince", currentStage: 0 },
   ])
 

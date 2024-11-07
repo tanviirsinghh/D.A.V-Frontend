@@ -42,18 +42,24 @@ export default function LandingPage() {
         <Card className="col-span-full">
           <h2 className="text-xl font-bold mb-4">Management Dashboard</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+            <Button className=''>
+              <i className='pi pi-play px-1 py-3'></i>
+              <Link>
+                Generate Order
+              </Link>
+            </Button>
             <Button >
-              <i className='pi pi-plus px-1'></i>
+              <i className='pi pi-plus px-1 py-3'></i>
               <Link>
                 Add New Product
               </Link>
             </Button>
-            <Button className="w-full">
-              <IconUsers className="mr-2 h-4 w-4" />
-              <Link to={"/registration"}>
+            <Link to={"/registration"}>
+              <Button className="w-full py-4">
+                <IconUsers className="mr-2 h-4 w-4" />
                 Create Account
-              </Link>
-            </Button>
+              </Button>
+            </Link>
             <Link to={"/userlisting"}>
               <Button variant="outline" className="w-full">
                 <IconUsers className="mr-2 h-4 w-4" />
@@ -72,11 +78,12 @@ export default function LandingPage() {
                 Track Order
               </Button>
             </Link>
-
-            <Button variant="outline" className="w-full">
-              <IconHistory className="mr-2 h-4 w-4" />
-              History
-            </Button>
+            <Link to={"/history"}>
+              <Button variant="outline" className="w-full">
+                <IconHistory className="mr-2 h-4 w-4" />
+                History
+              </Button>
+            </Link>
             <Button variant="outline" className="w-full">
               <IconFileText className="mr-2 h-4 w-4" />
               Invoice
