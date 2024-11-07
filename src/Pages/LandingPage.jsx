@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import 'primeicons/primeicons.css';
+import UserIcon from '../component/UserIcon';
 
 
 // Simple icon components to replace lucide-react
@@ -33,9 +33,16 @@ const Card = ({ children, className = '' }) => (
 export default function LandingPage() {
   return (
     <div className="flex flex-col h-screen bg-gray-100">
-      <header className="bg-white shadow-sm px-4 py-2 flex items-center">
+      <header className="bg-white flex justify-between  shadow-sm px-4 py-2 flex items-center">
+        <div className='flex'>
         <IconPackage />
         <h1 className="ml-2 text-lg font-semibold text-gray-800">D.A.V College Ayurvedic Pharmacy Management</h1>
+        </div>
+        <div>
+        <Link to={"/userinfo"}>
+          <UserIcon />
+          </Link>
+        </div>
       </header>
 
       <main className="flex-1 p-4 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -44,7 +51,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
             <Button variant="secondary">
               <i className='pi pi-plus px-1'></i>
-              <Link>
+              <Link to={'/addproduct'}>
                 Add new product
               </Link>
             </Button>

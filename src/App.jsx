@@ -9,6 +9,8 @@ import MedicineProductListing from './Pages/product';
 import UserListing from './Pages/userlisting';
 import TrackOrder from './Pages/trackOrder';
 import AddProduct from './Pages/AddProduct';
+import GenerateOrder from './Pages/GenerateOrder';
+import UserInfo from './Pages/UserInfo';
 
 function App() {
 
@@ -24,6 +26,10 @@ function App() {
           <Route path='/userlisting' element={<UserListing />} />
           <Route path='/trackorder' element={<TrackOrder />} />
           <Route path='/addproduct' element={<AddProduct />} />
+          <Route path='/generateorder' element={<GenerateOrder />} />
+          <Route path='/userinfo' element={<UserInfo />} />
+
+
 
         </Routes>
 
