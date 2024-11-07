@@ -4,8 +4,8 @@ import { useState } from "react"
 import { Check, Clock } from "lucide-react"
 
 export default function Component() {
-  const stages = ["Approval", "Block Manager", "Manufacturing", "Dispatched"]
-  
+  const stages = ["Approval", "Block  Incharge", "Manufacturing", "Dispatched"]
+
   const [clients] = useState([
     { id: "1", name: "Alice Johnson", currentStage: 2 },
     { id: "2", name: "Bob Smith", currentStage: 1 },
@@ -16,7 +16,7 @@ export default function Component() {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold text-center mb-8">Order Process Tracking</h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {clients.map((client) => (
           <div key={client.id} className="bg-white shadow-md rounded-lg overflow-hidden">
@@ -49,8 +49,8 @@ export default function Component() {
                           {index < client.currentStage
                             ? "Completed"
                             : index === client.currentStage
-                            ? "In Progress"
-                            : "Pending"}
+                              ? "In Progress"
+                              : "Pending"}
                         </p>
                       </div>
                     </div>

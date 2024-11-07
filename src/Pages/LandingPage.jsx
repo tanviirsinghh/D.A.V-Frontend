@@ -42,10 +42,10 @@ export default function LandingPage() {
         <Card className="col-span-full">
           <h2 className="text-xl font-bold mb-4">Management Dashboard</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
-            <Button variant="secondary">
+            <Button >
               <i className='pi pi-plus px-1'></i>
               <Link>
-                Add new product
+                Add New Product
               </Link>
             </Button>
             <Button className="w-full">
@@ -60,14 +60,19 @@ export default function LandingPage() {
                 Manage Users
               </Button>
             </Link>
-            <Button variant="outline" className="w-full">
-              <IconCheckCircle className="mr-2 h-4 w-4" />
-              Approve
-            </Button>
-            <Button variant="outline" className="w-full">
-              <IconPackage className="mr-2 h-4 w-4" />
-              Track Order
-            </Button>
+            <Link to={"/userapprovallist"}>
+              <Button variant="outline" className="w-full">
+                <IconCheckCircle className="mr-2 h-4 w-4" />
+                Approve
+              </Button>
+            </Link>
+            <Link to={"/trackorder"}>
+              <Button variant="outline" className="w-full">
+                <IconPackage className="mr-2 h-4 w-4" />
+                Track Order
+              </Button>
+            </Link>
+
             <Button variant="outline" className="w-full">
               <IconHistory className="mr-2 h-4 w-4" />
               History
