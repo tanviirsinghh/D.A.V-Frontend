@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Calendar, CreditCard, Package } from "lucide-react"
+const IconFileText = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>;
 
 export default function OrderHistory() {
     const [orders, setOrders] = useState([
@@ -43,10 +44,11 @@ export default function OrderHistory() {
                         <thead className="bg-gray-50">
                             <tr>
                                 <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Client Name</th>
-                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Order Completed</th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Order Placed</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Order Completed</th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Payment Method</th>
-                                <th className="px-6 py-3 text-center  text-xs font-medium text-gray-500 uppercase tracking-wider">Paid Amount</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Payment Method</th>
+                                <th className="px-6 py-3 text-center  text-xs font-medium text-gray-500 uppercase tracking-wider">Invoice</th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Orders Delivered</th>
                             </tr>
                         </thead>
@@ -59,13 +61,13 @@ export default function OrderHistory() {
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <div className="flex items-center">
                                             <Calendar className="h-5 w-5 text-gray-400 mr-2" />
-                                            <div className="text-sm text-gray-900">{order.completionDate}</div>
+                                            <div className="text-sm text-gray-900">{order.orderDate}</div>
                                         </div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <div className="flex items-center">
                                             <Calendar className="h-5 w-5 text-gray-400 mr-2" />
-                                            <div className="text-sm text-gray-900">{order.orderDate}</div>
+                                            <div className="text-sm text-gray-900">{order.completionDate}</div>
                                         </div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
@@ -76,6 +78,11 @@ export default function OrderHistory() {
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <div className="text-sm text-gray-900">₹{order.paidAmount.toFixed(2)}</div>
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap ">
+                                        <div className="">
+                                            <IconFileText />
+                                        </div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <div className="flex items-center">
