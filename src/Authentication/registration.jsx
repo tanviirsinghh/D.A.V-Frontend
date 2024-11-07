@@ -53,13 +53,12 @@ export default function RegistrationPage() {
     });
 
     const occupations = [
-        'Student',
-        'Teacher',
-        'Doctor',
-        'Engineer',
-        'Businessman',
-        'Pharmacist',
-        'Other'
+        'Admin',
+        'Manager',
+        'Block Incharge',
+        'Middle Man',
+        'Manufacturing Department',
+
     ];
 
     const handleChange = (e) => {
@@ -141,14 +140,7 @@ export default function RegistrationPage() {
                             options={occupations}
                         />
 
-                        <InputField
-                            label="Date"
-                            type="date"
-                            id="date"
-                            value={formData.date}
-                            onChange={handleChange}
-                            required
-                        />
+
 
                         <InputField
                             label="Password"

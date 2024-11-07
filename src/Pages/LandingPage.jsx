@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'primeicons/primeicons.css';
+
 
 // Simple icon components to replace lucide-react
 const IconPackage = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" y1="22" x2="12" y2="12"></line></svg>;
@@ -40,19 +42,31 @@ export default function LandingPage() {
         <Card className="col-span-full">
           <h2 className="text-xl font-bold mb-4">Management Dashboard</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+            <Button variant="secondary">
+              <i className='pi pi-plus px-1'></i>
+              <Link>
+                Add new product
+              </Link>
+            </Button>
             <Button className="w-full">
               <IconUsers className="mr-2 h-4 w-4" />
               <Link to={"/registration"}>
                 Create Account
               </Link>
             </Button>
+            <Link to={"/userlisting"}>
+              <Button variant="outline" className="w-full">
+                <IconUsers className="mr-2 h-4 w-4" />
+                Manage Users
+              </Button>
+            </Link>
             <Button variant="outline" className="w-full">
-              <IconUsers className="mr-2 h-4 w-4" />
-              Manage Users
+              <IconCheckCircle className="mr-2 h-4 w-4" />
+              Approve
             </Button>
             <Button variant="outline" className="w-full">
               <IconPackage className="mr-2 h-4 w-4" />
-              Dispatch
+              Track Order
             </Button>
             <Button variant="outline" className="w-full">
               <IconHistory className="mr-2 h-4 w-4" />
@@ -62,10 +76,7 @@ export default function LandingPage() {
               <IconFileText className="mr-2 h-4 w-4" />
               Invoice
             </Button>
-            <Button variant="outline" className="w-full">
-              <IconCheckCircle className="mr-2 h-4 w-4" />
-              Approve
-            </Button>
+
 
           </div>
         </Card>
@@ -76,9 +87,20 @@ export default function LandingPage() {
             <Link to={"/product"}>
               <Button variant="secondary" className="w-full">Pills</Button>
             </Link>
-            <Button variant="secondary" className="w-full">Liquid</Button>
-            <Button variant="secondary" className="w-full">Powder</Button>
-            <Button variant="secondary" className="w-full">Home Made</Button>
+            <Link to={"/product"}>
+              <Button variant="secondary" className="w-full">Liquid</Button>
+            </Link>
+            <Link to={"/product"}>
+              <Button variant="secondary" className="w-full">Powder</Button>
+            </Link>
+            <Link to={"/product"}>
+              <Button variant="secondary" className="w-full">Home Made</Button>
+            </Link>
+          </div>
+          <div>
+            <Link to={"/product"}>
+              <Button variant="secondary" className="w-full mt-2">Raw Material</Button>
+            </Link>
           </div>
         </Card>
 

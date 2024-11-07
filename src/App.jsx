@@ -6,6 +6,8 @@ import LandingPage from './Pages/LandingPage';
 import Otp from './Authentication/Otp';
 import RegistrationPage from './Authentication/registration';
 import MedicineProductListing from './Pages/product';
+import UserListing from './Pages/userlisting';
+import TrackOrder from './Pages/trackOrder';
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
           <Route path='/otp' element={<Otp />} />
           <Route path='/registration' element={<RegistrationPage />} />
           <Route path='/product' element={<MedicineProductListing />} />
+          <Route path='/userlisting' element={<UserListing />} />
+          <Route path='/trackorder' element={<TrackOrder />} />
         </Routes>
       </BrowserRouter>
 
