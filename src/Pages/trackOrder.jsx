@@ -17,7 +17,7 @@ export default function Component() {
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold text-center mb-8">Order Process Tracking</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {clients.map((client) => (
           <div key={client.id} className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="p-4 border-b">

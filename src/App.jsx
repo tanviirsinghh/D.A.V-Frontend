@@ -8,15 +8,13 @@ import RegistrationPage from './Authentication/registration';
 import MedicineProductListing from './Pages/product';
 import UserListing from './Pages/userlisting';
 import TrackOrder from './Pages/trackOrder';
-<<<<<<< HEAD
 import UserApprovalList from './Pages/approval';
 import OrderHistory from './Pages/History/outer';
 import PerticularHistory from './Pages/History/inner';
-=======
 import AddProduct from './Pages/AddProduct';
 import GenerateOrder from './Pages/GenerateOrder';
 import UserInfo from './Pages/UserInfo';
->>>>>>> Tanvir
+
 
 function App() {
 
@@ -31,18 +29,18 @@ function App() {
           <Route path='/product' element={<MedicineProductListing />} />
           <Route path='/userlisting' element={<UserListing />} />
           <Route path='/trackorder' element={<TrackOrder />} />
-<<<<<<< HEAD
+
           <Route path='/userapprovallist' element={<UserApprovalList />} />
           <Route path='/history' element={<OrderHistory />} />
           <Route path='/history/perticularhistory' element={<PerticularHistory />} />
-=======
+
           <Route path='/addproduct' element={<AddProduct />} />
           <Route path='/generateorder' element={<GenerateOrder />} />
           <Route path='/userinfo' element={<UserInfo />} />
 
 
 
->>>>>>> Tanvir
+
         </Routes>
 
       </BrowserRouter>
