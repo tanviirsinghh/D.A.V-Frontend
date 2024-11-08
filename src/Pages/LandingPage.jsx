@@ -60,6 +60,12 @@ export default function LandingPage() {
                 Request Product
               </Button>
             </Link>
+            <Link to={"/request_raw"}>
+              <Button className='w-full'>
+                <CalendarArrowUp className='h-8' />
+                Request Raw
+              </Button>
+            </Link>
             <Link to={"/addproduct"}>
               <Button className='w-full'>
                 <Plus className='h-8' />

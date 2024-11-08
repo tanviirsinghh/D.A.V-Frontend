@@ -16,6 +16,7 @@ import GenerateOrder from './Pages/GenerateOrder';
 import UserInfo from './Pages/UserInfo';
 import AyurvedicMedicineOrders from './Pages/orderList';
 import GenerateProduct from './Pages/generateProduct';
+import RequestRaw from './Pages/rawRequest';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route path='/userinfo' element={<UserInfo />} />
           <Route path='/orderlist' element={<AyurvedicMedicineOrders />} />
           <Route path='/requestproduct' element={<GenerateProduct />} />
+          <Route path='/request_raw' element={<RequestRaw />} />
 
 
 
