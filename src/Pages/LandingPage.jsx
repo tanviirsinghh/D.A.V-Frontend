@@ -58,21 +58,21 @@ export default function LandingPage() {
             <Link>
               <Button className='w-full'>
                 <i className='pi pi-plus font-bold px-1 py-3'></i>
-                Add New Product
-              </Button>
+                
+                <Link to={'/addproduct'}>
+                Add new product
+              </Link>
+               </Button>
             </Link>
             <Link to={"/registration"}>
-              <Button className='w-full'/>
-                <i className='pi pi-user px-1 py-3'></i>
-            <Button variant="secondary">
+            {/* <Button variant="secondary">
               <i className='pi pi-plus px-1'></i>
               <Link to={'/addproduct'}>
                 Add new product
               </Link>
-            </Button>
+            </Button> */}
             <Button className="w-full">
               <IconUsers className="mr-2 h-4 w-4" />
-              <Link to={"/registration"}/>
 
                 Create Account
               </Button>
