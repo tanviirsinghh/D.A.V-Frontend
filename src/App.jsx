@@ -14,6 +14,8 @@ import PerticularHistory from './Pages/History/inner';
 import AddProduct from './Pages/AddProduct';
 import GenerateOrder from './Pages/GenerateOrder';
 import UserInfo from './Pages/UserInfo';
+import AyurvedicMedicineOrders from './Pages/orderList';
+import GenerateProduct from './Pages/generateProduct';
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
           <Route path='/addproduct' element={<AddProduct />} />
           <Route path='/generateorder' element={<GenerateOrder />} />
           <Route path='/userinfo' element={<UserInfo />} />
+          <Route path='/orderlist' element={<AyurvedicMedicineOrders />} />
+          <Route path='/requestproduct' element={<GenerateProduct />} />
 
 
 
@@ -45,7 +49,7 @@ function App() {
 
       </BrowserRouter>
 
- 
+
     </>
   )
 }
