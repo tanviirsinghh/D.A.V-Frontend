@@ -90,7 +90,9 @@ export default function LandingPage() {
           <h2 className="text-xl font-bold mb-4">Categories</h2>
           <div className="grid grid-cols-2 gap-2">
             <Link to={"/product"}>
-              <Button variant="secondary" className="w-full">Pills</Button>
+              <Button variant="secondary" className="w-full">
+                <img src="../assets/pills-bottle.png" alt="" />
+                Pills</Button>
             </Link>
             <Link to={"/product"}>
               <Button variant="secondary" className="w-full">Liquid</Button>
@@ -118,7 +120,7 @@ export default function LandingPage() {
             </div>
             <div>
               <p className="text-2xl font-bold">15</p>
-              <p className="text-sm text-gray-600">Pending Approvals</p>
+              <p className="text-sm text-gray-600">Pending Order</p>
             </div>
             <div>
               <p className="text-2xl font-bold">50</p>

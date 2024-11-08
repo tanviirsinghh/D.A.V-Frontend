@@ -10,6 +10,7 @@ import UserListing from './Pages/userlisting';
 import TrackOrder from './Pages/trackOrder';
 import UserApprovalList from './Pages/approval';
 import OrderHistory from './Pages/History/outer';
+import PerticularHistory from './Pages/History/inner';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/trackorder' element={<TrackOrder />} />
           <Route path='/userapprovallist' element={<UserApprovalList />} />
           <Route path='/history' element={<OrderHistory />} />
+          <Route path='/history/perticularhistory' element={<PerticularHistory />} />
         </Routes>
       </BrowserRouter>
 

@@ -54,9 +54,11 @@ export default function RegistrationPage() {
 
     const occupations = [
         'Manager',
+        'Pharmacy Manager',
         'Block Incharge',
         'Product Incharge',
         'Manufacturing Department',
+
 
     ];
 
