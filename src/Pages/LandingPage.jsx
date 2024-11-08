@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import 'primeicons/primeicons.css';
+import UserIcon from '../component/UserIcon';
 
 
 // Simple icon components to replace lucide-react
@@ -32,15 +32,23 @@ const Card = ({ children, className = '' }) => (
 export default function LandingPage() {
   return (
     <div className="flex flex-col h-screen bg-gray-100">
-      <header className="bg-white shadow-sm px-4 py-2 flex items-center">
+      <header className="bg-white flex justify-between  shadow-sm px-4 py-2 flex items-center">
+        <div className='flex'>
         <IconPackage />
         <h1 className="ml-2 text-lg font-semibold text-gray-800">D.A.V College Ayurvedic Pharmacy Management</h1>
+        </div>
+        <div>
+        <Link to={"/userinfo"}>
+          <UserIcon />
+          </Link>
+        </div>
       </header>
 
       <main className="flex-1 p-4 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card className="col-span-full">
           <h2 className="text-xl font-bold mb-4">Management Dashboard</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+<<<<<<< HEAD
             <Link>
               <Button className='w-full'>
                 <i className='pi pi-play font-bold px-1 py-3'></i>
@@ -56,6 +64,17 @@ export default function LandingPage() {
             <Link to={"/registration"}>
               <Button className='w-full'>
                 <i className='pi pi-user px-1 py-3'></i>
+=======
+            <Button variant="secondary">
+              <i className='pi pi-plus px-1'></i>
+              <Link to={'/addproduct'}>
+                Add new product
+              </Link>
+            </Button>
+            <Button className="w-full">
+              <IconUsers className="mr-2 h-4 w-4" />
+              <Link to={"/registration"}>
+>>>>>>> Tanvir
                 Create Account
               </Button>
             </Link>
