@@ -16,6 +16,7 @@ import PerticularHistory from './Pages/History/inner';
 import AddProduct from './Pages/AddProduct';
 import GenerateOrder from './Pages/GenerateOrder';
 import UserInfo from './Pages/UserInfo';
+import RequestProduct from './component/RequestProduct';
 
 function App() {
 
@@ -36,6 +37,8 @@ function App() {
           <Route path='/addproduct' element={<AddProduct />} />
           <Route path='/generateorder' element={<GenerateOrder />} />
           <Route path='/userinfo' element={<UserInfo />} />
+          <Route path='/requestProduct' element={<RequestProduct />} />
+
         </Routes>
 
       </BrowserRouter>

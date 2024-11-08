@@ -26,7 +26,6 @@ export default function GenerateOrder() {
   const [clientName, setClientName] = useState('');
   const [clientEmail, setClientEmail] = useState('');
   const [orderDate, setOrderDate] = useState('');
-  const [orderNumber, setOrderNumber] = useState('');
   const [products, setProducts] = useState([]);
   const [showMedicineModal, setShowMedicineModal] = useState(false);
   const [showClientModal, setShowClientModal] = useState(false);
@@ -92,7 +91,7 @@ export default function GenerateOrder() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ clientName, clientEmail, orderDate, orderNumber, products });
+    console.log({ clientName, clientEmail, orderDate, products });
     alert('Order submitted successfully!');
   };
 
@@ -101,8 +100,8 @@ export default function GenerateOrder() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <h1 className="text-3xl font-bold mb-6 text-center text-indigo-600">New Order Form</h1>
+    <div className="max-w-4xl mx-auto p-6  shadow-lg rounded-lg">
+      <h1 className="text-3xl font-bold mb-6 text-center text-indigo-600">Request Product</h1>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
@@ -125,17 +124,7 @@ export default function GenerateOrder() {
               </button>
             </div>
           </div>
-          <div className="space-y-2">
-            <label htmlFor="clientEmail" className="block text-sm font-medium text-gray-700">Client Email</label>
-            <input
-              type="email"
-              id="clientEmail"
-              value={clientEmail}
-              onChange={(e) => setClientEmail(e.target.value)}
-              className="flex-grow h-10 outline-4 mt-1 block w-full rounded-md bg-gray-100 shadow-xl focus:border-indigo-900 focus:ring focus:ring-indigo-900 focus:ring-opacity-50"
-              required
-            />
-          </div>
+         
           <div className="space-y-2">
             <label htmlFor="orderDate" className="block text-sm font-medium text-gray-700">Order Date</label>
             <input
@@ -147,17 +136,7 @@ export default function GenerateOrder() {
               required
             />
           </div>
-          <div className="space-y-2">
-            <label htmlFor="orderNumber" className="block text-sm font-medium text-gray-700">Order Number</label>
-            <input
-              type="text"
-              id="orderNumber"
-              value={orderNumber}
-              onChange={(e) => setOrderNumber(e.target.value)}
-              className="mt-1 block h-10 w-full rounded-md border-gray-300 bg-gray-100 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-              required
-            />
-          </div>
+          
         </div>
 
         {products.length > 0 && (
