@@ -48,7 +48,7 @@ export default function LandingPage() {
         <Card className="col-span-full">
           <h2 className="text-xl font-bold mb-4">Management Dashboard</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
-<<<<<<< HEAD
+
             <Link>
               <Button className='w-full'>
                 <i className='pi pi-play font-bold px-1 py-3'></i>
@@ -62,9 +62,8 @@ export default function LandingPage() {
               </Button>
             </Link>
             <Link to={"/registration"}>
-              <Button className='w-full'>
+              <Button className='w-full'/>
                 <i className='pi pi-user px-1 py-3'></i>
-=======
             <Button variant="secondary">
               <i className='pi pi-plus px-1'></i>
               <Link to={'/addproduct'}>
@@ -73,8 +72,8 @@ export default function LandingPage() {
             </Button>
             <Button className="w-full">
               <IconUsers className="mr-2 h-4 w-4" />
-              <Link to={"/registration"}>
->>>>>>> Tanvir
+              <Link to={"/registration"}/>
+
                 Create Account
               </Button>
             </Link>
