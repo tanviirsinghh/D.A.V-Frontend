@@ -99,7 +99,7 @@ export default function AyurvedicMedicineOrders() {
             <div className="p-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div>
-                  <h2 className="text-xl font-semibold mb-2">{order.clientName}</h2>
+                  <h2 className="text-xl text-left font-semibold mb-2">{order.clientName}</h2>
                   <p className="flex items-center text-gray-600">
                     <MapPin className="h-4 w-4 mr-2" />
                     {order.address}

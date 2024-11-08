@@ -1,5 +1,13 @@
+import { Link } from "lucide-react";
+import { Navigate, useNavigate } from "react-router-dom";
 
-export default function Otp()  {
+export default function Otp() {
+  const navigate = useNavigate()
+  const handleOtp = () => {
+    navigate("/")
+    // window.location.href = "/"
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
@@ -19,12 +27,18 @@ export default function Otp()  {
               />
             ))}
           </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-3 rounded-md font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200"
-          >
+
+          <button className="w-full bg-blue-500 text-white py-3 rounded-md font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200" onClick={handleOtp}>
             Verify OTP
           </button>
+
+          {/* <button
+            // type="submit"
+            className="w-full bg-blue-500 text-white py-3 rounded-md font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200"
+            onClick={handleOtp}
+          >
+            Verify OTP
+          </button> */}
         </form>
         <p className="mt-6 text-sm text-center text-gray-600">
           Didn&apos;t receive the code?{' '}
