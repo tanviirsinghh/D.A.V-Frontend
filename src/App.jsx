@@ -8,7 +8,7 @@ import RegistrationPage from './Authentication/registration';
 import MedicineProductListing from './Pages/product';
 import UserListing from './Pages/userlisting';
 import TrackOrder from './Pages/trackOrder';
-<<<<<<< HEAD
+
 
 import UserApprovalList from './Pages/approval';
 import OrderHistory from './Pages/History/outer';
@@ -19,18 +19,18 @@ import GenerateOrder from './Pages/GenerateOrder';
 import UserInfo from './Pages/UserInfo';
 import RequestProduct from './component/RequestProduct';
 import RequestSmgri from './component/RequestSmgri';
-=======
-import UserApprovalList from './Pages/approval';
-import OrderHistory from './Pages/History/outer';
-import PerticularHistory from './Pages/History/inner';
-import AddProduct from './Pages/AddProduct';
-import GenerateOrder from './Pages/GenerateOrder';
-import UserInfo from './Pages/UserInfo';
+
+// import UserApprovalList from './Pages/approval';
+// import OrderHistory from './Pages/History/outer';
+// import PerticularHistory from './Pages/History/inner';
+// import AddProduct from './Pages/AddProduct';
+// import GenerateOrder from './Pages/GenerateOrder';
+// import UserInfo from './Pages/UserInfo';
 import AyurvedicMedicineOrders from './Pages/orderList';
 import GenerateProduct from './Pages/generateProduct';
 import RequestRaw from './Pages/rawRequest';
 
->>>>>>> refs/remotes/origin/main
+
 
 function App() {
 
@@ -45,7 +45,7 @@ function App() {
           <Route path='/product' element={<MedicineProductListing />} />
           <Route path='/userlisting' element={<UserListing />} />
           <Route path='/trackorder' element={<TrackOrder />} />
-<<<<<<< HEAD
+
           <Route path='/userapprovallist' element={<UserApprovalList />} />
           <Route path='/history' element={<OrderHistory />} />
           <Route path='/history/perticularhistory' element={<PerticularHistory />} />
@@ -56,7 +56,7 @@ function App() {
           <Route path='/requestsmgri' element={<RequestSmgri />} />
 
 
-=======
+
 
           <Route path='/userapprovallist' element={<UserApprovalList />} />
           <Route path='/history' element={<OrderHistory />} />
@@ -72,7 +72,7 @@ function App() {
 
 
 
->>>>>>> refs/remotes/origin/main
+
         </Routes>
 
       </BrowserRouter>

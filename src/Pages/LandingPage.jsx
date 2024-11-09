@@ -48,12 +48,12 @@ export default function LandingPage() {
         <Card className="col-span-full">
           <h2 className="text-xl font-bold mb-4">Management Dashboard</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
-<<<<<<< HEAD
 
-            <Link>
-=======
+
+           
+
             <Link to={"/generateorder"}>
->>>>>>> refs/remotes/origin/main
+
               <Button className='w-full'>
                 <CalendarArrowUp className='h-8' />
                 Generate Order
@@ -61,7 +61,7 @@ export default function LandingPage() {
             </Link>
             <Link to={"/requestproduct"}>
               <Button className='w-full'>
-<<<<<<< HEAD
+
                 <i className='pi pi-plus font-bold px-1 py-3'></i>
                 
                 <Link to={'/addproduct'}>
@@ -79,7 +79,6 @@ export default function LandingPage() {
             <Button className="w-full">
               <IconUsers className="mr-2 h-4 w-4" />
 
-=======
                 <CalendarArrowUp className='h-8' />
                 Request Product
               </Button>
@@ -99,7 +98,7 @@ export default function LandingPage() {
             <Link to={"/registration"}>
               <Button className='w-full'>
                 <UserPlus className='h-8' />
->>>>>>> refs/remotes/origin/main
+
                 Create Account
               </Button>
             </Link>
