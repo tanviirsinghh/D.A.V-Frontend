@@ -12,7 +12,7 @@ export default function OrderHistory() {
     const [orders, setOrders] = useState([
         {
             id: 1,
-            clientName: "Alice Johnson",
+            clientName: "Beeri",
             completionDate: "2023-05-20",
             orderDate: "2023-05-15",
             paymentMethod: "Cash",
@@ -21,7 +21,7 @@ export default function OrderHistory() {
         },
         {
             id: 2,
-            clientName: "Bob Smith",
+            clientName: "Vivek",
             completionDate: "2023-05-18",
             orderDate: "2023-05-10",
             paymentMethod: "UPI",
@@ -30,7 +30,7 @@ export default function OrderHistory() {
         },
         {
             id: 3,
-            clientName: "Charlie Brown",
+            clientName: "Prince Joshi",
             completionDate: "2023-05-22",
             orderDate: "2023-05-17",
             paymentMethod: "Bank Transfer",

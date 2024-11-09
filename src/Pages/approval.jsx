@@ -5,10 +5,11 @@ import { CheckCircle, XCircle, AlertCircle } from "lucide-react"
 
 export default function UserApprovalList() {
     const [users, setUsers] = useState([
-        { id: 1, name: "John Doe", date: "2023-05-15", occupation: "Manager", status: "pending" },
-        { id: 2, name: "Jane Smith", date: "2023-05-16", occupation: "Admin", status: "pending" },
-        { id: 3, name: "Mike Johnson", date: "2023-05-17", occupation: "Block Manager", status: "pending" },
-        { id: 4, name: "Sarah Brown", date: "2023-05-18", occupation: "Manufacturing Department", status: "pending" },
+        { id: 1, name: "Rahul", date: "2023-05-15", occupation: "Manager", status: "pending" },
+        { id: 1, name: "Nisha", date: "2023-05-15", occupation: "Pharmacy Manager", status: "pending" },
+        { id: 2, name: "Dinesh", date: "2023-05-16", occupation: "Block Incharge", status: "pending" },
+        { id: 3, name: "Shami", date: "2023-05-17", occupation: "Prduct Incharge", status: "pending" },
+        { id: 4, name: "Girls", date: "2023-05-18", occupation: "Manufacturing Department", status: "pending" },
     ])
 
     const [confirmDeny, setConfirmDeny] = useState(null)

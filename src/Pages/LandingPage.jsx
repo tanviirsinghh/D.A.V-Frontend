@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import 'primeicons/primeicons.css';
 import UserIcon from '../component/UserIcon';
-import { List, PillBottle, Milk, Flame, UserPlus, Plus, CalendarArrowUp, User, Sprout, Shell } from 'lucide-react';
+import { List, PillBottle, Milk, Flame, UserPlus, Plus, CalendarArrowUp, User, Sprout, Shell, Layers } from 'lucide-react';
 
 // Simple icon components to replace lucide-react
 const IconPackage = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" y1="22" x2="12" y2="12"></line></svg>;
@@ -34,8 +34,8 @@ export default function LandingPage() {
     <div className="flex flex-col h-screen bg-gray-100">
       <header className="bg-white flex justify-between  shadow-sm px-4 py-2 flex items-center">
         <div className='flex'>
-          <User />
-          <h1 className="ml-2 text-lg font-semibold text-gray-800">D.A.V College Ayurvedic Pharmacy Management</h1>
+          <Layers />
+          <h1 className="ml-2 text-lg font-semibold text-gray-800">D.A.C Pharmacy Management</h1>
         </div>
         <div>
           <Link to={"/userinfo"}>
