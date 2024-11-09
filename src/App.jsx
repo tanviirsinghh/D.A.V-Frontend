@@ -20,7 +20,7 @@ import UserInfo from './Pages/UserInfo';
 import RequestProduct from './component/RequestProduct';
 import RequestSmgri from './component/RequestSmgri';
 
-// import UserApprovalList from './Info';
+
 import AyurvedicMedicineOrders from './Pages/orderList';
 import GenerateProduct from './Pages/generateProduct';
 import RequestRaw from './Pages/rawRequest';
