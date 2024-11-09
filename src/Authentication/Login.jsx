@@ -59,8 +59,8 @@ export default function Login() {
               label="Email or Phone Number"
               type="text"
               id="emailOrPhone"
-              value={formData.emailOrPhone}
-              onChange={handleChange}
+              value="{formData.emailOrPhone}"
+              onChange="{handleChange}"
               required
               placeholder="Enter your email or phone number"
             />

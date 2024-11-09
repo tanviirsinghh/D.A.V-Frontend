@@ -17,6 +17,7 @@ import AddProduct from './Pages/AddProduct';
 import GenerateOrder from './Pages/GenerateOrder';
 import UserInfo from './Pages/UserInfo';
 import RequestProduct from './component/RequestProduct';
+import RequestSmgri from './component/RequestSmgri';
 
 function App() {
 
@@ -38,6 +39,8 @@ function App() {
           <Route path='/generateorder' element={<GenerateOrder />} />
           <Route path='/userinfo' element={<UserInfo />} />
           <Route path='/requestProduct' element={<RequestProduct />} />
+          <Route path='/requestsmgri' element={<RequestSmgri />} />
+
 
         </Routes>
 
