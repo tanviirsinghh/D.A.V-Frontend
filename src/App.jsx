@@ -19,13 +19,6 @@ import GenerateOrder from './Pages/GenerateOrder';
 import UserInfo from './Pages/UserInfo';
 import RequestProduct from './component/RequestProduct';
 import RequestSmgri from './component/RequestSmgri';
-
-// import UserApprovalList from './Pages/approval';
-// import OrderHistory from './Pages/History/outer';
-// import PerticularHistory from './Pages/History/inner';
-// import AddProduct from './Pages/AddProduct';
-// import GenerateOrder from './Pages/GenerateOrder';
-// import UserInfo from './Pages/UserInfo';
 import AyurvedicMedicineOrders from './Pages/orderList';
 import GenerateProduct from './Pages/generateProduct';
 import RequestRaw from './Pages/rawRequest';
