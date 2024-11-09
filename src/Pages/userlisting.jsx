@@ -18,7 +18,8 @@ export default function UserListing() {
     };
 
     const handleUpdate = (user) => {
-        setEditingUser(user);
+        window.location.href = "/userinfo"
+        // setEditingUser(user);
     };
 
     const handleSave = (e) => {

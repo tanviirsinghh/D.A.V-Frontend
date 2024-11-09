@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import 'primeicons/primeicons.css';
 import UserIcon from '../component/UserIcon';
-
+import { List, PillBottle, Milk, Flame, UserPlus, Plus, CalendarArrowUp, User, Sprout, Shell, Layers } from 'lucide-react';
 
 // Simple icon components to replace lucide-react
 const IconPackage = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" y1="22" x2="12" y2="12"></line></svg>;
@@ -34,12 +34,12 @@ export default function LandingPage() {
     <div className="flex flex-col h-screen bg-gray-100">
       <header className="bg-white flex justify-between  shadow-sm px-4 py-2 flex items-center">
         <div className='flex'>
-        <IconPackage />
-        <h1 className="ml-2 text-lg font-semibold text-gray-800">D.A.V College Ayurvedic Pharmacy Management</h1>
+          <Layers />
+          <h1 className="ml-2 text-lg font-semibold text-gray-800">D.A.C Pharmacy Management</h1>
         </div>
         <div>
-        <Link to={"/userinfo"}>
-          <UserIcon />
+          <Link to={"/userinfo"}>
+            <UserIcon />
           </Link>
         </div>
       </header>
@@ -48,15 +48,20 @@ export default function LandingPage() {
         <Card className="col-span-full">
           <h2 className="text-xl font-bold mb-4">Management Dashboard</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+<<<<<<< HEAD
 
             <Link>
+=======
+            <Link to={"/generateorder"}>
+>>>>>>> refs/remotes/origin/main
               <Button className='w-full'>
-                <i className='pi pi-play font-bold px-1 py-3'></i>
+                <CalendarArrowUp className='h-8' />
                 Generate Order
               </Button>
             </Link>
-            <Link>
+            <Link to={"/requestproduct"}>
               <Button className='w-full'>
+<<<<<<< HEAD
                 <i className='pi pi-plus font-bold px-1 py-3'></i>
                 
                 <Link to={'/addproduct'}>
@@ -74,6 +79,27 @@ export default function LandingPage() {
             <Button className="w-full">
               <IconUsers className="mr-2 h-4 w-4" />
 
+=======
+                <CalendarArrowUp className='h-8' />
+                Request Product
+              </Button>
+            </Link>
+            <Link to={"/request_raw"}>
+              <Button className='w-full'>
+                <CalendarArrowUp className='h-8' />
+                Request Raw
+              </Button>
+            </Link>
+            <Link to={"/addproduct"}>
+              <Button className='w-full'>
+                <Plus className='h-8' />
+                Add New Product
+              </Button>
+            </Link>
+            <Link to={"/registration"}>
+              <Button className='w-full'>
+                <UserPlus className='h-8' />
+>>>>>>> refs/remotes/origin/main
                 Create Account
               </Button>
             </Link>
@@ -101,6 +127,12 @@ export default function LandingPage() {
                 History
               </Button>
             </Link>
+            <Link to={"/orderlist"}>
+              <Button variant="outline" className="w-full">
+                <List />
+                Order List
+              </Button>
+            </Link>
           </div>
         </Card>
 
@@ -109,22 +141,30 @@ export default function LandingPage() {
           <div className="grid grid-cols-2 gap-2">
             <Link to={"/product"}>
               <Button variant="secondary" className="w-full">
-                <img src="../assets/pills-bottle.png" alt="" />
+                <PillBottle />
                 Pills</Button>
             </Link>
             <Link to={"/product"}>
-              <Button variant="secondary" className="w-full">Liquid</Button>
+              <Button variant="secondary" className="w-full">
+                <Milk />
+                Liquid</Button>
             </Link>
             <Link to={"/product"}>
-              <Button variant="secondary" className="w-full">Powder</Button>
+              <Button variant="secondary" className="w-full">
+                <Shell />
+                Powder</Button>
             </Link>
             <Link to={"/product"}>
-              <Button variant="secondary" className="w-full">Home Made</Button>
+              <Button variant="secondary" className="w-full">
+                <Sprout />
+                Home Made</Button>
             </Link>
           </div>
           <div>
             <Link to={"/product"}>
-              <Button variant="secondary" className="w-full mt-2">Raw Material</Button>
+              <Button variant="secondary" className="w-full mt-2">
+                <Flame />
+                Raw Material</Button>
             </Link>
           </div>
         </Card>
@@ -156,6 +196,6 @@ export default function LandingPage() {
           </div>
         </Card>
       </main>
-    </div>
+    </div >
   );
 }
